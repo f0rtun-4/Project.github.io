@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/mediaqueries.css">
     <link rel="javascript" href="javascript.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -79,7 +81,6 @@
         </div>
     </section>
 
-
     <div class="panel one">
         <section class="section-2">
             <div class="h1-text">
@@ -140,7 +141,10 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
+
             </div>
         </section>
     </div>
@@ -205,15 +209,43 @@
                 </div>
             </div>
 
-            <div class="Special">
-                <h3>if a picture paints a thousand words</h3>
-                <h3>Then why can't i paint you</h3>
-                <h3>The words will never show the you i've come to know</h3>
-            </div>
+            <!-- <div class="footer">
+                <div class="text-one">
+                    <h3>if a picture paints a thousand words</h3>
+                </div>
+                <div class="text-two">
+                    <h3>Then why can't i paint <span>You</span></h3>
+                </div>
+                <div class="text-three">
+                    <h3>The words will never show the you i've come to know</h3>
+                </div>
+            </div> -->
         </div>
+
     </div>
+    <!-- <div class="countdown">
+                <div class="container-day">
+                    <h3 class="day">Time</h3>
+                    <h3 class="text-day">Day</h3>
+                </div>
+
+                <div class="container-hour">
+                    <h3 class="hour">Time</h3>
+                    <h3 class="text-hour">Hour</h3>
+                </div>
+
+                <div class="container-minute">
+                    <h3 class="minute">Time</h3>
+                    <h3 class="text-min">Minute</h3>
+                </div>
+                
+                <div class="container-second">
+                    <h3 class="second">Time</h3>
+                    <h3 class="text-sec">Second</h3>
+                </div> -->
 
     <script src="javascript.js"></script>
+
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -221,13 +253,22 @@
         AOS.init();
     </script>
 
+    <!-- LocomotiveScroll -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+        const scroller = new LocomotiveScroll({
+            el: document.querySelector('.panel one'),
+            smooth: true
+        });
+    </script> -->
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
-    
+
     <script>
-        gsap.registerPlugin(ScrollTrigger,TextPlugin);
+        gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
         gsap.utils.toArray(".panel").forEach((panel, i) => {
             ScrollTrigger.create({
@@ -238,7 +279,10 @@
             });
         });
 
+        gsap.registerPlugin(ScrollTrigger);
+
     </script>
 </body>
+
 
 </html>

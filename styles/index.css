@@ -15,7 +15,9 @@
     font-family: 'Poppins';
 }
 
-/* LETTER-SECTIOn */
+/* LETTER-SECTION */
+
+
 
 .scroll-icon {
     width: 100%;
@@ -175,8 +177,11 @@
     right: -250px;
 }
 
-.h1-text {
+.section-1, .section-2 {
     background-image: url(../Bahan\ web/cloud-dark.svg);
+}
+
+.h1-text {
     background-color: #ffffff;
     width: 100%;
     height: 30vh;
@@ -196,7 +201,6 @@
 /* CARD-SECTION */
 
 .container {
-    background-image: url(../Bahan\ web/cloud-dark.svg);
     width: 100%;
     height: 65vh;
     box-sizing: border-box;
@@ -222,6 +226,7 @@
     text-align: center;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 10px 20px;
+    /* margin-bottom: 10px; */
     border-radius: 10px;
 }
 
@@ -432,3 +437,12 @@
     top: 20%;
     text-align: center;
 }
+
+/* Demos */
+.footer {
+    top: 20%;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+  
